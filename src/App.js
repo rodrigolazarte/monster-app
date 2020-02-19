@@ -17,8 +17,8 @@ class App extends Component{
         .then(user => this.setState({monsters: user}))
     }
 
-    handleChange = (e) => {
-        this.setState({searchField: e.target.value})
+    handleChange = (event) => {
+        this.setState({searchField: event.target.value})
     }
 
     render() {
